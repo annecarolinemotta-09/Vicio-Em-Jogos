@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Matriz Educação | Vício em Jogos</title>
+  <meta name="description" content="Conheça os riscos dos jogos de azar virtuais" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="projeto.css" />
+
+  <!-- AOS (animações ao rolar) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Ícones (Tabler icons webfont) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.9.0/tabler-icons.min.css" />
+</head>
+<body>
+  <!-- ========================= 1) TELA FAKE DO JOGO ========================= --> 
+  <section id="demo-jogo" class="tela" aria-label="Demonstração de jogo de aposta (falsa)"> <div class="container-jogo"><h1 class="titulo-jogo">Fortune Tiger</h1><!-- Slot com 3 roletas (linhas) --> <div class="slot-machine"> <!-- Primeira roleta --> <div class="reel-row"> <div class="reel">🐯</div><div class="reel">🐯</div> <div class="reel">🐯</div> </div> <!-- Segunda roleta --> <div class="reel-row"> <div class="reel">💰</div> <div class="reel">💰</div> <div class="reel">💰</div> </div> <!-- Terceira roleta --> <div class="reel-row"> <div class="reel">🍀</div> <div class="reel">🍀</div> <div class="reel">🍀</div> </div> </div> <button id="btn-apostar" aria-label="Apostar">Apostar</button> </div> </section> <!-- Mensagem de Alerta --> <div id="mensagem-alerta" role="alert" aria-live="assertive">⚠️ ERRO!</div>
+  <div id="site-projeto" style="display:none;">
+  <a href="#conteudo" class="skip">Ir para o conteúdo</a>
+
+  <!-- Header -->
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <img src="mtlogo.png" alt="Logo Matri" />
+        <span>Matriz Educação</span>
+      </div>
+
+      <nav class="menu" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#cases">Etapas</a>
+        <a href="#linha">Linha do Tempo</a>
+        <a href="#quiz">Quiz</a>
+        <button id="btn-hamburger" aria-label="Menu">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero-vicio" class="hero-section">
+    <div class="hero-content" data-aos="zoom-in">
+      <h1>O jogo pode parecer diversão,<br>mas o vício pode custar sua vida.</h1>
+      <p>Conscientização sobre os riscos do jogo compulsivo.</p>
+      <a href="#estatisticas" class="cta-hero">Saiba os riscos</a>
+    </div>
+  </section>
+  
+  <section id="estatisticas" class="stats-section">
+    <div class="container">
+      <h2 data-aos="fade-up">Estatísticas sobre o vício em jogos</h2>
+      <div class="stats-grid">
+        <div class="stat-card" data-aos="zoom-in">
+          <h3>30%</h3>
+          <p>dos endividados relatam envolvimento com jogos</p>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+          <h3>70%</h3>
+          <p>dos jogadores compulsivos iniciam antes dos 25 anos</p>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+          <h3>80%</h3>
+          <p>chegam a perder grande parte da renda familiar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ========================= SOBRE O PROJETO ========================= -->
+<section id="sobre" class="sobre-section">
+  <div class="sobre-container">
+    
+    <!-- Lado esquerdo - textos + cards -->
+    <div class="sobre-esquerda" data-aos="fade-right">
+      <h2>Sobre o Projeto</h2>
+      <p>
+        Este projeto tem como objetivo refletir sobre os riscos que o vício em jogos de azar virtuais pode trazer 
+        para a vida das pessoas, especialmente aquelas em situação de vulnerabilidade e baixa renda.
+      </p>
+
+      <div class="sobre-cards">
+        <div class="s-card" data-aos="zoom-in">
+          <h3>Conscientização</h3>
+          <p>Informar a sociedade sobre os perigos dos jogos virtuais e como eles afetam famílias.</p>
+        </div>
+
+        <div class="s-card" data-aos="zoom-in" data-aos-delay="200">
+          <h3>Impactos Sociais</h3>
+          <p>Endividamento, problemas emocionais e até rupturas familiares são consequências comuns.</p>
+        </div>
+
+        <div class="s-card" data-aos="zoom-in" data-aos-delay="400">
+          <h3>Reflexão</h3>
+          <p>Estimular o pensamento crítico sobre o que está por trás da aparente diversão.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lado direito - logo -->
+    <div class="sobre-direita" data-aos="fade-left">
+      <img src="Matriz-logo.png" alt="Logo da Escola - Matriz Educação" class="sobre-logo">
+    </div>
+  </div>
+</section>
+
+  
+
+  <!-- Etapas do vicio -->
+<section class="cases" id="cases">
+  <div class="container">
+    <h2 class="section-title">Etapas do Risco nos Jogos de Azar Virtuais</h2>
+    <p class="section-subtitle">Como o vício pode evoluir em etapas</p>
+    
+    <div class="cases-grid">
+      <!-- Card 1 -->
+      <div class="case-card">
+        <div class="case-content">
+          <h3>Atração Inicial</h3>
+          <p>Curiosidade e propagandas chamativas levam ao primeiro contato com os jogos</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="case-card">
+        <div class="case-content">
+          <h3>Envolvimento Crescente</h3>
+          <p>Mais tempo e dinheiro gastos, com início de perdas financeiras</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="case-card">
+        <div class="case-content">
+          <h3>Dependência e Impactos Negativos</h3>
+          <p>Dificuldade em parar, dívidas e impactos emocionais</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Linha do tempo -->
+  <section id="linha" aria-labelledby="linha-title">
+    <div class="timeline">
+      <div class="t-item" data-aos="fade-right">
+        <span class="t-dot" aria-hidden="true"></span>
+        <div></div>
+        <div class="t-card"><h3>1994</h3><p>Início dos cassinos online</p></div>
+      </div>
+
+      <div class="t-item" data-aos="fade-left">
+        <span class="t-dot" aria-hidden="true"></span>
+        <div class="t-card"><h3>2003</h3><p>Popularização do pôquer online</p></div>
+      </div>
+
+      <div class="t-item" data-aos="fade-right">
+        <span class="t-dot" aria-hidden="true"></span>
+        <div></div>
+        <div class="t-card"><h3>2015</h3><p>Crescimento acelerado e primeiros alertas sérios</p></div>
+      </div>
+
+      <div class="t-item" data-aos="fade-left">
+        <span class="t-dot" aria-hidden="true"></span>
+        <div class="t-card"><h3>2022</h3><p>Mercado bilionário e riscos à saúde mental</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz" class="quiz-section">
+    <div class="container">
+      <h2 data-aos="fade-up">Quiz: Verdadeiro ou Falso</h2>
+      <div id="quiz-container">
+        <p id="quiz-question">Carregando pergunta...</p>
+        <div id="quiz-options">
+          <button id="true-btn">Verdadeiro</button>
+          <button id="false-btn">Falso</button>
+        </div>
+        <button id="next-btn" style="display:none;">Próxima</button>
+        <p id="quiz-result" style="display:none;"></p>
+      </div>
+    </div>
+  </section>
+  
+  <button id="btn-topo" class="back-to-top">
+    <img src="seta-branca.png" alt="Seta para cima" class="seta-img" />
+    </button>
+  
+
+  <!-- Contato / Footer -->
+  <footer id="contato" aria-labelledby="contato-title">
+    <div class="wrap">
+      <div>
+        <h3 id="contato-title">Integrantes</h3>
+        <p>Anne Caroline de Melo Motta</p>
+        <p>Maria Flor Costa Saraiva</p>
+        <p>Maria Eduarda Batista Cezario</p>
+      </div>
+
+      <div>
+        <h3>Endereço</h3>
+        <p>R. Prof. Gonçalves, 41 — Campo Grande,Rio de Janeiro - RJ</p>
+      </div>
+    </div>
+
+    <p class="copy">© 2025 Matriz Educação — Todos os direitos reservados.</p>
+  </footer>
+</div>
+  <!-- Scripts -->
+  <audio id="som-spin" src="spin.mp3"></audio>
+<audio id="som-coin" src="coin.mp3"></audio>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="projeto.js"></script>
+</body>
+</html>  
