@@ -521,6 +521,15 @@ footer h3{margin:0 0 8px; text-align: center;}
   .t-item{grid-template-columns:1fr; text-align:center;}
   .timeline::before{left:8px;}
   .t-dot{left:8px;}
+  .nav{
+    flex-direction:column;
+    align-itens:center;
+    gap:12px;
+    position: relative !important;
+  }
+  .menu{
+    justify-content:center;
+  }
 }
 
 /* CELULARES GRANDES / TABLETS PEQUENOS */
@@ -537,6 +546,7 @@ footer h3{margin:0 0 8px; text-align: center;}
     flex-direction:column;
     align-itens:center;
     gap:12px;
+    position: relative !important;
   }
   .menu{
     justify-content:center;
@@ -556,6 +566,7 @@ footer h3{margin:0 0 8px; text-align: center;}
     flex-direction:column;
     align-itens:center;
     gap:12px;
+    position: relative !important;
   }
   .menu{
     justify-content:center;
@@ -573,6 +584,7 @@ footer h3{margin:0 0 8px; text-align: center;}
   .t-dot{left:50%;}
 
 }
+
 
 
 
